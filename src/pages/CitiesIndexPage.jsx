@@ -1,7 +1,8 @@
 import { Component } from 'react';
 import CityModel from '../models/CityModel';
-import City from '../components/City'
+import CityShowPage from '../pages/CityShowPage'
 import {Link} from 'react-router-dom'
+
 
 
 // Steps to render the list of cities
@@ -28,8 +29,8 @@ class CitiesIndexPage extends Component {
    const citiesJSX =  this.state.cityData.map((cityObj, idx)=>{
       return(
         <Link key={idx} to={`/cities/${cityObj._id}`}>
-            {/* <h3>{cityObj.city}</h3> */}
-          <City cityObj={cityObj}/>
+            <h3>{cityObj.city}</h3>
+          <CityShowPage cityObj={cityObj}/>
         </Link>
       )
     })

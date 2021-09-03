@@ -14,7 +14,7 @@ class CityShowPage extends React.Component{
     }
 
     componentDidMount() {
-        const cityId = this.props.match.params.id
+        const cityId = this.cityObj
         console.log(cityId)
         CityModel.show(cityId).then((data)=>{
             console.log(data)
@@ -32,11 +32,11 @@ class CityShowPage extends React.Component{
     render(){
         console.log(this.props)
         return(
-            <main>
+            <div>
                 <h1>City Show Page</h1>
                 <h3>{this.state.city}</h3>
-                <img src={this.state.image} alt="" />
-            </main>     
+                {/* <img src={this.state.image} alt="" /> */}
+            </div>     
         )
     }
 
