@@ -9,22 +9,18 @@ import {Link} from 'react-router-dom'
 // - Create a component for each city
 // - Need to access the database to get the game data
 // - add state to maintain list of all data
-
 class CitiesIndexPage extends Component {
-
   state = {
-    cityData: []
+    cityData: [],
+    inputVal: ''
   }
-  
   componentDidMount = () =>{
     //make fetch called here, or at least reference the game model which has it
     CityModel.all().then((data)=>{
       console.log(data)
       this.setState({cityData:data})
-      
     })
   }
-
   renderCities(){
    const citiesJSX =  this.state.cityData.map((cityObj, idx)=>{
       return(
@@ -35,15 +31,30 @@ class CitiesIndexPage extends Component {
       )
     })
     return citiesJSX
-
+  }
+  handleChange =(event) => {
+    this.setState({inputVal:event.target.value})
+  }
+  handleFormSubmit = (event) => {
+    event.preventDefault() 
+    console.log('form was submitted')
   }
   render() {
     console.log(this.state)
     return (
-      <main>
+      <div>
         <h1>All Cities</h1>
         <div>{this.renderCities()}</div>
-      </main>
+        <h2>Add a City</h2>
+        <form onSumbit={this.handleFormSubmit}>
+          <input 
+          type='text'
+          value={this.state.inputVal}
+          onChange={this.handleChange}
+          />
+          <input type='submit' />
+        </form>
+      </div>
     );
   }
 }
