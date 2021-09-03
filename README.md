@@ -25,3 +25,4 @@ FLIGHTS/HOTEL API
 1. User can search cities in search bar at top
 2. User can use flight API to find flights
 
+
