@@ -30,7 +30,7 @@ class CitiesIndexPage extends Component {
       return(
         <Link key={idx} to={`/cities/${cityObj._id}`}>
             <h3>{cityObj.city}</h3>
-          <CityShowPage cityObj={cityObj}/>
+          {/* <CityShowPage cityObj={cityObj}/> */}
         </Link>
       )
     })

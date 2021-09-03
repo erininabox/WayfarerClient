@@ -14,7 +14,7 @@ class CityShowPage extends React.Component{
     }
 
     componentDidMount() {
-        const cityId = this.cityObj
+        const cityId = this.props.match.params.id
         console.log(cityId)
         CityModel.show(cityId).then((data)=>{
             console.log(data)
