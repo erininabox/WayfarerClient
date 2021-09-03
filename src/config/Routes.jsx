@@ -18,16 +18,10 @@ function Routes(){
         {/* <Route path='/cities/:id' exact component={CityShowPage} /> */}
         <Route exact path='/cities/:id'render={(props)=> <CityShowPage {...props} />} />
         
-        <Route path='/cities' component={CitiesIndexPage}
-        />
-    
-
+        <Route path='/cities' component={CitiesIndexPage} />
 
         {/* <Route path='/cities/:id' exact render={()=>{
           <CityShowPage cityData={cityData}/>}} /> */}
-
-        
-        
 
         <Route path='/cities/:id/:id' component={ArticlePage} />
 

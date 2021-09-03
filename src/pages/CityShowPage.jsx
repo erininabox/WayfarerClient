@@ -1,12 +1,8 @@
 import React from 'react'
 import CityModel from '../models/CityModel'
-
 // fetch data for the game in particular by it's id
-
 /*  
-
 */
-
 class CityShowPage extends React.Component{
     state = {
         city:'',
@@ -27,8 +23,6 @@ class CityShowPage extends React.Component{
         })
         
     }
-
-
     render(){
         console.log(this.props)
         return(
