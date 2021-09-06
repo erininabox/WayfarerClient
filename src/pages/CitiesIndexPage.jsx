@@ -46,7 +46,7 @@ class CitiesIndexPage extends Component {
         <h1>All Cities</h1>
         <div>{this.renderCities()}</div>
         <h2>Add a City</h2>
-        <form onSumbit={this.handleFormSubmit}>
+        <form onSubmit={this.handleFormSubmit}>
           <input 
           type='text'
           value={this.state.inputVal}
