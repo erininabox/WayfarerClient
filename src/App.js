@@ -14,7 +14,11 @@ import CityCarousel from './partials/CityCarousel'
 
 function App() {
   return (
-    <div className="App">
+    <div 
+    className="App"
+    style={{
+      backgroundImage: `url('${process.env.PUBLIC_URL}/images/home.jpeg')`
+    }}>
      
       <Header/>
       <Routes/>

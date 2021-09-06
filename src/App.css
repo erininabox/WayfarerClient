@@ -1,8 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Bellota+Text&display=swap');
+.inlineheader{
+  display:flex;
+  justify-content: space-between;
+}
 .header {
   border: 1px solid black;
+  font-family: 'Bellota Text';
+  font-size: 30px;
+  color: white;
+  padding: 5px;
+  background: rgba(250, 249, 249, 0.611);
+}
+.logobanner {
+  display: inline;
+  width: 200px;
+  height: 65px;
+}
+.something{
+  justify-content: baseline;
+  align-content: space-between;
+  list-style-type: none;
+  display: flex;
+  text-align:right;
+  align-self:flex-end;
+  margin: 0;
+}
+.headerlinks{
+  margin-right: 0%;
+  display: flex;
+  justify-items: space-between;
+}
+.search{
+  padding-right: 2px;
+}
+.authentication{
 }
 
-img {
-  width: 100px;
-  border: 1px solid red;
+.pics{
+  height: 400px;
+  width: 450px;
+  margin:auto;
+  padding: 15px;
+}
+
+.item{
+  background: white;
+display: block;
+height: 475px;
+width: 450px;
+margin:auto;
+border: 1px solid black;
+/* background: grey; */
+}
+.carousel-indicators{
+  opacity: 0;
+}
+.caption{
+  font-family: 'Rock Salt';
+  margin: auto;
+}
+
+.App{
+  background-position: center;
 }
