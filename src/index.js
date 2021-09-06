@@ -5,6 +5,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//bootstrap stuff
+// import Bootstrap from '/node_modules/react-bootstrap'
+// import'./node_modules/bootstrap/dist/css/bootstrap.css';
+// import'./node_modules/bootstrap/dist/css/bootstrap-theme.css';
+import $ from 'jquery';
+import Popper from 'popper.js';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
