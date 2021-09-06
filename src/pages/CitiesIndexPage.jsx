@@ -2,6 +2,8 @@ import { Component } from 'react';
 import CityModel from '../models/CityModel';
 import CityShowPage from '../pages/CityShowPage'
 import {Link} from 'react-router-dom'
+// const axios = require('axios').default;
+import axios from 'axios'
 
 
 
@@ -38,7 +40,23 @@ class CitiesIndexPage extends Component {
   handleFormSubmit = (event) => {
     event.preventDefault() 
     console.log('form was submitted')
+    // start out by making the axios api call to ur db in the backend, need to hit the POST route and create a new city, need the underlying route to match what is set up in the express server
+    axios.post('http://localhost:4000/api/cities', {
+      //pass in the object of the new city, containing the actual data that is to be added, for now it is only the name of the city
+      city: this.state.inputVal
+      // the .then() returns our response from the server, the response is the data containing the new city
+    }).then((response)=>{
+      // because it's buried in some data we have to dig a bit to find it, look in the components tab in the google tools
+      // Spread operator (...) allows us to take all the properties of an existing array and place them in a new array, low key allows you to avoid the PUSH method, which is problematic in react
+      //store new array in new variable
+      let updatedCityData = [...this.state.cityData, response.data]
+      // set state array of cityData to new data in new variable
+      this.setState({cityData:updatedCityData})
+    }).catch(function(error){
+      console.log(error)
+    })
   }
+
   render() {
     console.log(this.state)
     return (
