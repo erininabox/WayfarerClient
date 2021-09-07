@@ -20,6 +20,19 @@ const responsive= {
     }
   };
   class IndexCarousel extends React.Component {
+
+    renderCities(){
+        const citiesJSX =  this.state.cityData.map((cityObj, idx)=>{
+           return(
+             <Link key={idx} to={`/cities/${cityObj._id}`}>
+                 <h3>{cityObj.city}</h3>
+               {/* <CityShowPage cityObj={cityObj}/> */}
+             </Link>
+           )
+         })
+         return citiesJSX
+       }
+       
       render(){
 
           return(
@@ -39,7 +52,8 @@ const responsive= {
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 dotListClass="custom-dot-list-style"
                 itemClass="carousel-item-padding-40-px">
-            
+            {/* NEXT STEPS: MOVE CITY DATA INTO INDEXCAROUSEL, CREATE A FORM FOR NEW CITY NAME
+                AND IMAGE, DYNAMICALLY ADD FORM DATA TO CAROUSEL */}
                 <div>Item 1</div>
                 <div>Item 2</div>
                 <div>Item 3</div>
