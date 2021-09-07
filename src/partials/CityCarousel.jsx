@@ -1,5 +1,7 @@
 
 import Carousel from 'react-bootstrap/Carousel'
+import { Link } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 function CityCarousel() { 
 return(
@@ -14,7 +16,9 @@ return(
     </div>
     <Carousel.Caption className='caption'>
       <div className='caption'>
-      <h5>San Francisco, USA</h5>
+      <Link to='/cities/6132642f3fdc0e5e10345f0f'>
+        San Francisco, USA
+      </Link>
       </div>
   
     </Carousel.Caption>
@@ -29,7 +33,9 @@ return(
     </div>
     <Carousel.Caption>
       <div className='caption'>
-      <h5>Mumbai, India</h5>
+      <Link to='/cities/6137ad1777a829bd947350f2'>
+        Mumbai, India
+      </Link>
       </div>
     </Carousel.Caption>
     
@@ -44,7 +50,9 @@ return(
     </div>
     <Carousel.Caption>
       <div className='caption'>
-      <h5>Third slide label</h5>
+      <Link to='/cities/6137ad1077a829bd947350f0'>
+        Paris, France
+      </Link>
       </div>
     </Carousel.Caption>
   </Carousel.Item>
