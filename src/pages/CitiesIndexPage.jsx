@@ -75,7 +75,7 @@ class CitiesIndexPage extends Component {
           />
           <input type='submit' />
         </form>
-        <IndexCarousel />
+        <IndexCarousel  />
       </div>
     );
   }
