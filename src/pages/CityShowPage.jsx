@@ -1,3 +1,4 @@
+import '../cityShowPage.css'
 import React from 'react'
 import CityModel from '../models/CityModel'
 // fetch data for the game in particular by it's id
@@ -26,7 +27,7 @@ class CityShowPage extends React.Component{
     render(){
         console.log(this.props)
         return(
-            <div>
+            <div className='city-show-page'>
                 <h1>City Show Page</h1>
                 <h3>{this.state.city}</h3>
                 {/* <img src={this.state.image} alt="" /> */}

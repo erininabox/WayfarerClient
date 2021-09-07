@@ -2,6 +2,8 @@ import { Component } from 'react';
 import CityModel from '../models/CityModel';
 import CityShowPage from '../pages/CityShowPage'
 import {Link} from 'react-router-dom'
+import IndexCarousel from '../partials/IndexCarousel'
+import MultiCarousel from 'react-multi-carousel';
 // const axios = require('axios').default;
 import axios from 'axios'
 
@@ -62,6 +64,7 @@ class CitiesIndexPage extends Component {
     return (
       <div>
         <h1>All Cities</h1>
+
         <div>{this.renderCities()}</div>
         <h2>Add a City</h2>
         <form onSubmit={this.handleFormSubmit}>
@@ -72,6 +75,7 @@ class CitiesIndexPage extends Component {
           />
           <input type='submit' />
         </form>
+        <IndexCarousel />
       </div>
     );
   }
