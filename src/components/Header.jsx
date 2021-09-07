@@ -1,12 +1,17 @@
 import React from 'react';
-// import logo from './logo.png';
 
 function Header(){
     return(
         <div className='header'>
-            <img src={process.env.PUBLIC_URL + '/images/logo.png'} alt="" />
-            <div className='Search'>Search</div>
-            <div className='Authentication'>Authentication</div>
+           <span class='inlineheader'> 
+                <img className='logobanner' src={process.env.PUBLIC_URL + '/images/banner.png'} alt="" />
+                <span className='headerlinks'>
+                    <ul className='something'>
+                <li className='Search'>Search</li> &nbsp;
+                <li className='Authentication'>Authentication</li> &nbsp;
+                    </ul>
+                </span>
+            </span>
         </div>
     )
 }

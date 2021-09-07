@@ -5,36 +5,47 @@ function CityCarousel() {
 return(
 <Carousel variant="dark">
   <Carousel.Item>
+  <div className='item'>
     <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=f5f5f5"
+      className="pics"
+      src={process.env.PUBLIC_URL + '/images/SF.png'}
       alt="First slide"
     />
-    <Carousel.Caption>
-      <h5>First slide label</h5>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </div>
+    <Carousel.Caption className='caption'>
+      <div className='caption'>
+      <h5>San Francisco, USA</h5>
+      </div>
+  
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
+  <div className='item'>
     <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=eee"
+      className="pics"
+      src={process.env.PUBLIC_URL + '/images/Mumbai.jpeg'}
       alt="Second slide"
     />
+    </div>
     <Carousel.Caption>
-      <h5>Second slide label</h5>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div className='caption'>
+      <h5>Mumbai, India</h5>
+      </div>
     </Carousel.Caption>
+    
   </Carousel.Item>
-  <Carousel.Item>
+  <Carousel.Item >
+    <div className='item'>
     <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=e5e5e5"
-      alt="Third slide"
+      className="pics"
+      src={process.env.PUBLIC_URL + '/images/paris.jpeg'}
+      alt="Paris, France"
     />
+    </div>
     <Carousel.Caption>
+      <div className='caption'>
       <h5>Third slide label</h5>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
