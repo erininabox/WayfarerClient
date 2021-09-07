@@ -17,7 +17,7 @@ class CityShowPage extends React.Component{
 
             this.setState({
                 city: data.city,
-                image: data.image
+                image: data.inpmmage
                 
             })
         })
