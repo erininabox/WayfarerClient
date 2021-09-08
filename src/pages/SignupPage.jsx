@@ -1,21 +1,63 @@
-import React from 'react';
+import React from "react";
+import axios from 'axios';
 
-function Signup() {
-    return(
-    <form action="/login" method="POST">
+class SignupPage extends React.Component {
+  state = {
+    username: "",
+    password: "",
+  };
+
+  onSubmit = (event) => {
+    event.preventDefault();
+    axios.post('http://localhost:4000/signup', {
+        username: this.state.username,
+        password: this.state.password
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    
+  };
+
+  handleUsernameChange = (event) => {
+    this.setState({ username: event.target.value });
+  };
+  handlePasswordChange = (event) => {
+    this.setState({ password: event.target.value });
+  };
+
+  render() {
+    return (
+      <form onSubmit={this.onSubmit}>
         <label for="username">Username:</label>
-            <input type="text" id="username" name="username" />
-            <br />
-            <br />
+        <input
+          type="text"
+          id="username"
+          name="username"
+          value={this.state.username}
+          onChange={this.handleUsernameChange}
+        />
+        <br />
+        <br />
         <label for="password">Password:</label>
-            <input type="password" id="password" name="password" />
-            <br />
-            <br />
-        <input type="submit" />
-    </form>
-
-    )
-
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value={this.state.password}
+          onChange={this.handlePasswordChange}
+        />
+        <br />
+        <br />
+        <input 
+            type="submit" 
+            value="Sign Up" />
+      </form>
+    );
+  }
 }
 
-export default Signup;
+export default SignupPage;

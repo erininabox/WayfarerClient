@@ -6,7 +6,8 @@ import ArticlePage from '../pages/ArticlePage';
 import CityShowPage from '../pages/CityShowPage';
 import { Switch, Route } from 'react-router-dom';
 import CreateCity from '../pages/CreateCity';
-import CityModel from '../models/CityModel'
+import CityModel from '../models/CityModel';
+import SignupPage from '../pages/SignupPage';
 
 
 function Routes(){
@@ -28,6 +29,8 @@ function Routes(){
         <Route path='/cities/:id/:id' component={ArticlePage} />
 
         <Route path='/create' component={CreateCity} />
+
+        <Route path='/signup' component={SignupPage} />
 
       </Switch>
         

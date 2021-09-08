@@ -11,12 +11,12 @@ class MyEditor extends React.Component {
     this.onChange = editorState => this.setState({editorState});
   }
 
-    MyInput = () => {
-    const [value, setValue] = useState('');
-    const onChange = (evt) => setValue(evt.target.value);
+  //   MyInput = () => {
+  //   const [value, setValue] = useState('');
+  //   const onChange = (evt) => setValue(evt.target.value);
   
-    return <input value={value} onChange={onChange} />;
-  };
+  //   return <input value={value} onChange={onChange} />;
+  // };
 
   render() {
     return (
@@ -25,6 +25,6 @@ class MyEditor extends React.Component {
   }
 }
 
-ReactDOM.render(<MyEditor />, document.getElementById('container'));
+// ReactDOM.render(<MyEditor />, document.getElementById('container'));
 
 export default MyEditor
