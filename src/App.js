@@ -22,7 +22,6 @@ function App() {
      
       <Header/>
       <Routes/>
-      <CityCarousel />
       <Footer/>
       
     </div>

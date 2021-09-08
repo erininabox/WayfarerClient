@@ -62,5 +62,10 @@ border: 1px solid black;
 }
 
 .App{
-  background-position: center;
+  background-position: fixed center;
+  background-size: cover;
+  height: 100vh;
 }
+/* .city-show-page{
+
+} */

@@ -1,8 +1,9 @@
 import React from 'react'
+import CityCarousel from '../partials/CityCarousel'
 function HomePage(){
     return(
         <div>
-            <h2></h2>
+            <CityCarousel />
         </div>
     )
 }
