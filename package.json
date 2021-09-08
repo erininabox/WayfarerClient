@@ -19,6 +19,7 @@
     "react-multi-carousel": "^2.6.5",
     "react-router-dom": "^5.2.1",
     "react-scripts": "4.0.3",
+    "react-slick": "^0.28.1",
     "reactstrap": "^8.10.0",
     "rowdy-logger": "^1.0.2",
     "web-vitals": "^1.1.2"

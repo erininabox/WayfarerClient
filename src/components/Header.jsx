@@ -3,7 +3,7 @@ import React from 'react';
 function Header(){
     return(
         <div className='header'>
-           <span class='inlineheader'> 
+           <span className='inlineheader'> 
                 <img className='logobanner' src={process.env.PUBLIC_URL + '/images/banner.png'} alt="" />
                 <span className='headerlinks'>
                     <ul className='something'>
