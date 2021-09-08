@@ -1,6 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import React from 'react'
 import 'react-multi-carousel/lib/styles.css'
+import { Link } from 'react-router-dom'
 
 const responsive= {
     desktop: {
