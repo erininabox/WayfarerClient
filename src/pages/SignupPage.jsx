@@ -8,19 +8,21 @@ class SignupPage extends React.Component {
   };
 
   onSubmit = (event) => {
-    event.preventDefault();
-    axios.post('http://localhost:4000/signup', {
-        username: this.state.username,
-        password: this.state.password
-      })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-    
-  };
+      event.preventDefault();
+      axios.post('http://localhost:4000/signup', {
+          username: this.state.username,
+          password: this.state.password
+        })
+        .then((response) => {
+          // console.log(response)
+          this.props.history.push('/cities')
+          console.log(this.props);
+        })
+        .catch(function (error) {
+          console.log(error);
+        });
+      
+    };
 
   handleUsernameChange = (event) => {
     this.setState({ username: event.target.value });

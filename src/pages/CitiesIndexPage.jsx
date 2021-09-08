@@ -75,7 +75,16 @@ class CitiesIndexPage extends Component {
   render() {
     console.log(this.state)
     return (
-      <div>
+      <div className='cities-index' style={{
+        backgroundImage: `url('${process.env.PUBLIC_URL}/images/citybg.jpg')`,
+        backgroundPosition: "bottom"
+      }}>
+        <div className='carousel-container'>
+        <IndexCarousel  
+        cityData={this.state.cityData}
+        deleteCity={this.deleteCity}
+        />
+        </div>
         <h2>Add a City</h2>
         <form onSubmit={this.handleFormSubmit}>
           <input 
@@ -91,12 +100,6 @@ class CitiesIndexPage extends Component {
           />
           <input type='submit' />
         </form>
-        <div className='carousel-container'>
-        <IndexCarousel  
-        cityData={this.state.cityData}
-        deleteCity={this.deleteCity}
-        />
-        </div>
       </div>
     );
   }

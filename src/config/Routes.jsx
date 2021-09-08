@@ -7,6 +7,7 @@ import CityShowPage from '../pages/CityShowPage';
 import { Switch, Route } from 'react-router-dom';
 import CreateCity from '../pages/CreateCity';
 import SignupPage from '../pages/SignupPage';
+import LoginPage from '../pages/LoginPage'
 // import CityModel from '../models/CityModel';
 import Tiptap from '../pages/Tiptap';
 
@@ -31,7 +32,9 @@ function Routes(){
 
         <Route path='/create' component={CreateCity} />
 
-        <Route path='/signup' component={SignupPage} />
+        <Route path='/signup' render={(props) => <SignupPage {...props} /> } />
+
+        <Route path ='/login' render={(props) => <LoginPage {...props} /> } />
 
       </Switch>
         

@@ -19,13 +19,13 @@ class IndexCarousel extends React.Component {
       return (
         <div className='carousel-index' key={idx}>
           <Link to={`/cities/${cityObj._id}`}>
-            <h3 className='cityindexname'>{cityObj.city}</h3>
             <img className='cityindeximage' src={cityObj.image}/>
+            <p className='cityindexname'>{cityObj.city}</p>
             {/* <CityShowPage cityObj={cityObj}/> */}
           </Link>
-          <button className='btn-danger' 
+          {/* <button className='btn-danger' 
           onClick={() => this.handleDelete(cityObj._id)}>Delete
-          </button>
+          </button> */}
         </div>
       )
     })
@@ -52,7 +52,6 @@ class IndexCarousel extends React.Component {
     }
     return (
       <div>
-        <h2>Single Item</h2>
         <Slider {...settings}>
        {this.carouselItems()}
         </Slider>
