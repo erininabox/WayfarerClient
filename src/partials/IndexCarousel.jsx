@@ -5,15 +5,13 @@ import React from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import axios from 'axios';
 
-
-
 class IndexCarousel extends React.Component {
-  state = {redirect:false}
+  state = {redirect: null}
 
   handleDelete = (id) => {
     axios.delete(`http://localhost:4000/api/cities/${id}`)
     .then(() => {
-     this.setState({redirect:true})
+     this.setState({redirect:'/cities'})
     })
   }
   carouselItems = () => {
@@ -33,28 +31,36 @@ class IndexCarousel extends React.Component {
     })
     return citiesJSX
   }
-
   render() {
-    if (this.state.redirect===true){
-    return <Redirect to="/cities" />
+    // if (this.state.redirect===true){
+    // return <Redirect to="/cities" />
+    // } 
+    if (this.state.redirect){
+      return <Redirect to={this.state.redirect} />
     } 
     const settings = {
       dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 3,
-      slidesToScroll: 2,
-
+      slidesToShow: 1,
+      slidesToScroll: 1,
     };
+    if (this.props.cityData.length < 3){
+      settings.slidesToShow= this.props.cityData.length
+    } else if  (this.props.cityData.length >= 3){
+      settings.slidesToShow= 3
+    }
     return (
       <div>
-        <h2> Single Item</h2>
+        <h2>Single Item</h2>
         <Slider {...settings}>
        {this.carouselItems()}
         </Slider>
       </div>
     );
+    
   }
+    
 }
 
 

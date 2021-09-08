@@ -25,11 +25,9 @@ class CitiesIndexPage extends Component {
       this.setState({cityData:data})
     })
   }
- 
   handleChange =(event) => {
     this.setState({inputVal:event.target.value})
   }
-
   handleImageChange =(event) => {
     this.setState({inputImage:event.target.value})
   }
