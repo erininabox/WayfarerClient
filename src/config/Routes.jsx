@@ -1,5 +1,6 @@
 import React from 'react';
 import HomePage from '../pages/HomePage';
+import CreatePostPage from '../pages/CreatePostPage';
 import CitiesIndexPage from '../pages/CitiesIndexPage';
 import ArticlePage from '../pages/ArticlePage';
 import CityShowPage from '../pages/CityShowPage';
@@ -16,6 +17,7 @@ function Routes(){
         <Route path='/' exact component={HomePage}/>
           
         {/* <Route path='/cities/:id' exact component={CityShowPage} /> */}
+        <Route path='/cities/:id/create' component={CreatePostPage} />
         <Route exact path='/cities/:id'render={(props)=> <CityShowPage {...props} />} />
         
         <Route path='/cities' component={CitiesIndexPage} />

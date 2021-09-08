@@ -9,6 +9,7 @@ function Header(){
                     <ul className='something'>
                 <li className='Search'>Search</li> &nbsp;
                 <li className='Authentication'>Authentication</li> &nbsp;
+                <li className='cities-link'><a href='/cities'>Cities</a></li>&nbsp;
                     </ul>
                 </span>
             </span>

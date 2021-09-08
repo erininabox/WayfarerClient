@@ -11,7 +11,7 @@ class IndexCarousel extends React.Component {
   handleDelete = (id) => {
     axios.delete(`http://localhost:4000/api/cities/${id}`)
     .then(() => {
-     this.setState({redirect:'/cities'})
+     this.props.deleteCity(id)
     })
   }
   carouselItems = () => {

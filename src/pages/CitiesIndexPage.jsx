@@ -18,13 +18,33 @@ class CitiesIndexPage extends Component {
     inputVal: '',
     inputImage:''
   }
-  componentDidMount = () =>{
-    //make fetch called here, or at least reference the game model which has it
+
+  fetchData = () =>{
     CityModel.all().then((data)=>{
       console.log(data)
       this.setState({cityData:data})
     })
   }
+  
+  deleteCity = (id) => {
+    console.log('delete city activated')
+    const cityDataArray = this.state.cityData.filter((cityObj)=>{
+      console.log(cityObj._id, id)
+        if( cityObj._id == id ){
+          return false
+        } else {
+          return true
+        }
+    })
+    this.setState({cityData:cityDataArray})
+  }
+
+  componentDidMount = () =>{
+    console.log('mounted')
+    //make fetch called here, or at least reference the game model which has it
+    this.fetchData()
+  }
+  
   handleChange =(event) => {
     this.setState({inputVal:event.target.value})
   }
@@ -74,6 +94,7 @@ class CitiesIndexPage extends Component {
         <div className='carousel-container'>
         <IndexCarousel  
         cityData={this.state.cityData}
+        deleteCity={this.deleteCity}
         />
         </div>
       </div>
