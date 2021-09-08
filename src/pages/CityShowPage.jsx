@@ -8,7 +8,8 @@ import { Link } from 'react-router-dom'
 class CityShowPage extends React.Component{
     state = {
         city:'',
-        image:''
+        image:'',
+        articles:[]
     }
 
     componentDidMount() {
@@ -19,22 +20,37 @@ class CityShowPage extends React.Component{
 
             this.setState({
                 city: data.city,
-                image: data.image
-                
+                image: data.image,
+                articles: data.articles
             })
         })
         
     }
+    renderArticles = () =>{
+        let articlesJSX = this.state.articles.map((article)=>{
+            return(
+                <div>
+                    <ul>
+                        <li>
+                            <a href={`/cities/${this.props.match.params.id}/${article._id}`}>{article.content}</a>
+                            {/* render as links to article */}
+                        </li>
+                    </ul>
+                </div>
+            )
+        }) 
+        return articlesJSX
+    }
     render(){
-        console.log(this.props)
+
         return(
             <div className='city-show-page'>
                 
                 <h1>{this.state.city}</h1>
                 <img src={this.state.image} alt="" />
-                {/* Need to create articles here */}
+                {this.renderArticles()}
                 <div>
-        <h2><Link to="/cities/:id/create">Create an article</Link></h2>
+        <h2><Link to={`/cities/${this.props.match.params.id}/create`}>Create an article</Link></h2>
           
       </div>
     </div>     
