@@ -9,6 +9,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^3.4.1",
     "cors": "^2.8.5",
+    "draft-js": "^0.11.7",
     "express": "^4.17.1",
     "jquery": "^3.6.0",
     "mongoose": "^6.0.4",
