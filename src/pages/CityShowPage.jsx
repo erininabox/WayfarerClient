@@ -49,13 +49,14 @@ class CityShowPage extends React.Component {
         {/* Need to create articles here */}
         <div>
           <h1 className="city-name">{this.state.city}</h1>
+          <h2 className="city-undertitle">Find out more about {this.state.city}...</h2>
             <img className="city-image" src={this.state.image} alt="" />
           <div className="city-show-body">
           <h2 className="articles">Articles:</h2>
             {this.renderArticles()}
           <h2>
             <Link
-              className="articles"
+              className="createarticles"
               to={`/cities/${this.props.match.params.id}/create`}
             >
               Create an article

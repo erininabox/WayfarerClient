@@ -38,7 +38,7 @@ function Routes(){
 
         
 
-        <Route path='/create' component={CreateCity} />
+        <Route path='/create' render={(props) => <CreateCity {...props} /> } />
 
         <Route path='/signup' render={(props) => <SignupPage {...props} /> } />
 
