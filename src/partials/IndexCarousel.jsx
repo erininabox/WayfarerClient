@@ -19,7 +19,7 @@ class IndexCarousel extends React.Component {
       return (
         <div className='carousel-index' key={idx}>
           <Link to={`/cities/${cityObj._id}`}>
-            <img className='cityindeximage' src={cityObj.image}/>
+            <img className='cityindeximage' src={cityObj.image} alt=""/>
             <p className='cityindexname'>{cityObj.city}</p>
             {/* <CityShowPage cityObj={cityObj}/> */}
           </Link>
