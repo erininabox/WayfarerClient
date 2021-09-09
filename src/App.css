@@ -5,12 +5,36 @@
 .city-name{
   font-family: 'Bellota Text', 'Sans';
   color: white;
+  font-size: 60px;
   text-align: center;
 }
-
-.articles{
+.city-undertitle{
   font-family: 'Bellota Text', 'Sans';
   color: white;
+  font-size: 30px;
+  margin-top: -12px;
+  text-align: center;
+}
+.articles{
+  font-family: 'Bellota Text', 'Sans';
+  font-weight: 600;   
+  color: white;
+}
+
+.createarticles{
+  font-family: 'Bellota Text', 'Sans';
+  font-weight: 600;   
+  color: white;
+}
+
+.createarticles:hover{
+  font-family: 'Bellota Text', 'Sans';
+  font-weight: 700;   
+  color: rgb(129, 125, 125);
+  text-decoration: none;
+  padding: 5px;
+  background-color: rgba(243, 243, 245, 0.83);
+  transition: .7s;
 }
 .ProseMirror{
   font-family: 'Bellota Text', 'Sans';
@@ -21,7 +45,7 @@
   color: white;
 }
 .city-image{
-  width: 70vh;
+  width: 90vh;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -112,7 +136,9 @@
 .cityindeximage{
   width:400px;
   height: 300px;
+  margin: auto;
 }
+
 .cities-index{
   margin: 0 auto;
   /* padding: 20px; */
@@ -129,23 +155,55 @@
 }
 .cityindexname {
   font-size: 1.6em;
-  color: white;
-  font-family: 'Bellota Text', 'Sans';
-  text-align: center;
-  position: fixed;
-  bottom: 125px; 
-  margin-left: 150px;
-}
-.cityindexname:hover {
-  font-size: 40px;
   font-weight: 600;
   color: white;
   font-family: 'Bellota Text', 'Sans';
   text-align: center;
   position: fixed;
   bottom: 125px; 
-  margin-left: 150px;
+  margin-left: 250px;
+  text-shadow: .25px .25px 0 #000,
+    -.25px .25px 0 #000,
+    .25px -.25px 0 #000,
+    -.25px -.25px 0 #000,
+    0px .25px 0 #000,
+    0px -.25px 0 #000,
+    -.25px 0px 0 #000,
+    .25px 0px 0 #000,
+    .5px .5px 0 #000,
+    -.5px .5px 0 #000,
+    .5px -.5px 0 #000,
+    -.5px -.5px 0 #000,
+    0px .5px 0 #000,
+    0px -.5px 0 #000,
+    -.5px 0px 0 #000,
+    .5px 0px 0 #000,
+    .25px .5px 0 #000,
+    -.25px .5px 0 #000,
+    .25px -.5px 0 #000,
+    -.25px -.5px 0 #000,
+    .5px .25px 0 #000,
+    -.5px .25px 0 #000,
+    .5px -.25px 0 #000,
+    -.5px -.25px 0 #000;
+}
+.cityindexname:hover {
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  font-family: 'Bellota Text', 'Sans';
+  text-align: center;
+  position:fixed;
+  bottom: 125px; 
+  margin-left: 135px;
+  text-shadow: none;
   transition: .7s;
+  background-color: rgba(226, 226, 226, 0.399);
+  border-radius: 20%;
+  padding: 10px;
+  /* width:400px;
+  height: 300px; */
+ transition: .5s;
 }
 .main{
   padding: 20px;
@@ -212,4 +270,17 @@
   border-radius: 20%;
   margin: auto;
   background-color: rgba(255,255,255,0.5);
+}
+.slick-next:before{
+  font-size: 30px;
+}
+
+.slick-prev:before{
+  font-size: 30px;
+}
+.plus-sign{
+  width: 6vh;
+  margin-top: -110px;
+  margin-left: 20px;
+
 }
