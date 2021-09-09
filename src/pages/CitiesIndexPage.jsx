@@ -76,7 +76,7 @@ class CitiesIndexPage extends Component {
     console.log(this.state)
     return (
       <div className='cities-index' style={{
-        backgroundImage: `url('${process.env.PUBLIC_URL}/images/citybg.jpg')`,
+        backgroundImage: `url('${process.env.PUBLIC_URL}/images/airport.jpeg')`,
         backgroundPosition: "bottom"
       }}>
         <div className='carousel-container'>

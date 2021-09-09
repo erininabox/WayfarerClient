@@ -5,6 +5,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+}
+
+html,body,#root,.App,.homepage-css{
+  background-position: fixed center;
+  background-size: cover;
+  min-height: 100vh;
 }
 
 code {
