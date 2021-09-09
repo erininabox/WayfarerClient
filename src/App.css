@@ -6,11 +6,12 @@
 }
 .header {
   border: 1px solid black;
-  font-family: 'Bellota Text';
+  font-family: 'Bellota Text', 'Sans';
   font-size: 30px;
   color: white;
   padding: 5px;
-  background: rgba(250, 249, 249, 0.611);
+  background: rgb(170, 194, 216);
+  display: float;
 }
 .logobanner {
   display: inline;
@@ -33,8 +34,6 @@
 }
 .search{
   padding-right: 2px;
-}
-.authentication{
 }
 
 .pics{
@@ -75,5 +74,25 @@ border: 1px solid black;
 /* .carousel-pics{
 } */
 .cityindeximage{
-  width:100px;
+  width:400px;
+  height: 300px;
+}
+.cities-index{
+  margin: 0 auto;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.carousel-container{
+  padding: 20px;
+  background-color: rgba(255,255,255,0.7);
+  display: flex; 
+
+}
+
+.cityindexname{
+  font-size: 20px;
+  font-family: 'Bellota Text', 'Sans';
+  text-align: center;
+  position: relative; 
 }
