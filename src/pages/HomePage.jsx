@@ -5,7 +5,8 @@ function HomePage(){
         <div className='homepage-css' style={{
             backgroundImage: `url('${process.env.PUBLIC_URL}/images/home.jpeg')`
           }}>
-            <CityCarousel />
+              <p className='home-city-carousel'>
+            <CityCarousel /> </p>
         </div>
     )
 }

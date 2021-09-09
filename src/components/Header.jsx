@@ -5,7 +5,7 @@ function Header(){
     return(
         <div className='header'>
            <span className='inlineheader'> 
-                <img className='logobanner' src={process.env.PUBLIC_URL + '/images/banner.png'} alt="" />
+                <Link to='./'><img className='logobanner' src={process.env.PUBLIC_URL + '/images/banner.png'} alt="" /></Link>
                 <span className='headerlinks'>
                     <ul className='something'>
                 <li className='Search'></li> &nbsp;

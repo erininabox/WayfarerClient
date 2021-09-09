@@ -33,8 +33,9 @@ class LoginPage extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
-        <label for="username">Username:</label>
+      <form onSubmit={this.onSubmit} className="login-form-css">
+        <label for="username"><h2>Username:</h2></label>
+        <p />
         <input
           type="text"
           id="username"
@@ -44,7 +45,8 @@ class LoginPage extends React.Component {
         />
         <br />
         <br />
-        <label for="password">Password:</label>
+        <label for="password"><h2>Password:</h2></label>
+        <p />
         <input
           type="password"
           id="password"
@@ -55,6 +57,7 @@ class LoginPage extends React.Component {
         <br />
         <br />
         <input 
+            className="submit-button"
             type="submit" 
             value="Login" />
       </form>

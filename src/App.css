@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Bellota+Text&display=swap');
+
+
 .city-name{
   font-family: 'Bellota Text', 'Sans';
   color: white;
@@ -69,12 +71,12 @@
 
 .item{
   background: white;
-display: block;
-height: 475px;
-width: 450px;
-margin:auto;
-border: 1px solid black;
-/* background: grey; */
+  display: block;
+  height: 475px;
+  width: 450px;
+  margin:auto;
+  border: 1px solid black;
+  /* background: grey; */
 }
 .carousel-indicators{
   opacity: 0;
@@ -83,7 +85,37 @@ border: 1px solid black;
   font-family: 'Rock Salt';
   margin: auto;
 }
-
+.home-city-carousel {
+  padding-top: 5%;
+}
+.sign-up-form-css {
+  font-family: "Bellota Text", sans-serif;
+  color: white;
+  font-size: 1.3em;
+  width: 200px;
+  padding-top: 10%;
+  margin: auto;
+}
+.login-form-css {
+  font-family: "Bellota Text", sans-serif;
+  color: white;
+  font-size: 1.3em;
+  width: 200px;
+  padding-top: 10%;
+  margin: auto;
+}
+.new-city-form {
+  font-family: "Bellota Text", sans-serif;
+  color: white;
+  font-size: 1.2em;
+  width: 200px;
+  padding-top: 5%;
+  margin: auto;
+}
+.create-post { 
+  font-size: 1.1em; 
+  width: 200px;
+}
 /* .App{
   background-position: fixed center;
   background-size: cover;
@@ -127,5 +159,8 @@ border: 1px solid black;
 .main{
   padding: 20px;
 }
-
+.submit-button {
+  font-family: "Bellota Text", sans-serif;
+  color: black;
+}
 
