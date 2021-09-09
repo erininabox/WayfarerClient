@@ -1,6 +1,6 @@
-const url = 'http://localhost:4000/api/cities';
+const url = 'http://localhost:4000/api/cities/';
 //store logic to make api calls (fetch/axios here)
-class CityModel {
+class ArticleModel {
     static all() {
         // fetch method uses a JS promise
         // when we call fetch, fetch is promising that at some point there will be a response
@@ -15,13 +15,10 @@ class CityModel {
             })
     }
     // will make  fetch call to get a single game by it's id
-    static show(cityId){
-         return fetch(`${url}/${cityId}`)
+    static show(articleId, cityId){
+         return fetch(`${url}/${cityId}/${articleId}`)
             .then((response)=> response.json())
-            .catch((err)=>{
-                console.log(err)
-            })
                 
     }
 }
-export default CityModel;
+export default ArticleModel;
