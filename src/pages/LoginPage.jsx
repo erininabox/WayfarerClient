@@ -33,33 +33,37 @@ class LoginPage extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit} className="login-form-css">
-        <label for="username"><h2>Username:</h2></label>
-        <p />
-        <input
-          type="text"
-          id="username"
-          name="username"
-          value={this.state.username}
-          onChange={this.handleUsernameChange}
-        />
-        <br />
-        <br />
-        <label for="password"><h2>Password:</h2></label>
-        <p />
-        <input
-          type="password"
-          id="password"
-          name="password"
-          value={this.state.password}
-          onChange={this.handlePasswordChange}
-        />
-        <br />
-        <br />
-        <input 
-            className="submit-button"
-            type="submit" 
-            value="Login" />
+      <form onSubmit={this.onSubmit}>
+        <div className="login-form-css">
+          <label for="username"><h2>Username:</h2></label>
+          <p />
+          <input
+            className="input-text"
+            type="text"
+            id="username"
+            name="username"
+            value={this.state.username}
+            onChange={this.handleUsernameChange}
+          />
+          <br />
+          <br />
+          <label for="password"><h2>Password:</h2></label>
+            <p />
+          <input
+            className="input-text"
+            type="password"
+            id="password"
+            name="password"
+            value={this.state.password}
+            onChange={this.handlePasswordChange}
+            />
+          <br />
+          <br />
+          <input 
+              className="submit-button"
+              type="submit" 
+              value="Login" />
+        </div>
       </form>
     );
   }

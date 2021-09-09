@@ -37,6 +37,7 @@ class SignupPage extends React.Component {
         <label for="username"><h2>Username:</h2></label>
         <p />
         <input
+          className="input-text"
           type="text"
           id="username"
           name="username"
@@ -48,6 +49,7 @@ class SignupPage extends React.Component {
         <label for="password"><h2>Password:</h2></label>
         <p />
         <input
+          className="input-text"
           type="password"
           id="password"
           name="password"

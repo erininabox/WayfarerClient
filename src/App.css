@@ -88,33 +88,13 @@
 .home-city-carousel {
   padding-top: 5%;
 }
-.sign-up-form-css {
-  font-family: "Bellota Text", sans-serif;
-  color: white;
-  font-size: 1.3em;
-  width: 200px;
-  padding-top: 10%;
-  margin: auto;
-}
-.login-form-css {
-  font-family: "Bellota Text", sans-serif;
-  color: white;
-  font-size: 1.3em;
-  width: 200px;
-  padding-top: 10%;
-  margin: auto;
-}
-.new-city-form {
-  font-family: "Bellota Text", sans-serif;
-  color: white;
-  font-size: 1.2em;
-  width: 200px;
-  padding-top: 5%;
-  margin: auto;
-}
+
 .create-post { 
   font-size: 1.1em; 
   width: 200px;
+}
+.input-text {
+  color: black;
 }
 /* .App{
   background-position: fixed center;
@@ -142,19 +122,30 @@
 }
 .carousel-container{
   padding: 20px;
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255,255,255,0.583);
 }
 .carousel-index{
   text-align: center;
 }
-.cityindexname{
-  font-size: 20px;
+.cityindexname {
+  font-size: 1.6em;
   color: white;
   font-family: 'Bellota Text', 'Sans';
   text-align: center;
   position: fixed;
   bottom: 125px; 
   margin-left: 150px;
+}
+.cityindexname:hover {
+  font-size: 40px;
+  font-weight: 600;
+  color: white;
+  font-family: 'Bellota Text', 'Sans';
+  text-align: center;
+  position: fixed;
+  bottom: 125px; 
+  margin-left: 150px;
+  transition: .7s;
 }
 .main{
   padding: 20px;
@@ -163,4 +154,62 @@
   font-family: "Bellota Text", sans-serif;
   color: black;
 }
+.delete-button {
+  background-color: rgba(252, 252, 252, 0);
+  border: 0;
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  padding: 7px 10px;
+  font-size: 1.2em;
+  /* width: 100px; */
+}
+.delete-button:hover {
+  background-color: rgba(252, 252, 252, 0.308);
+  transition: .5s;
+}
+.delete-button-wrapper {
+  position: float;
+  margin: auto;
+}
 
+.sign-up-form-css {
+  font-family: "Bellota Text", sans-serif;
+  color: white;
+  font-size: 1.3em;
+  width: 300px;
+  height: 370px;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 20%;
+  margin: auto;
+  margin-top: 20%;
+  background-color: rgba(255,255,255,0.5);
+}
+.login-form-css {
+  font-family: "Bellota Text", sans-serif;
+  color: white;
+  font-size: 1.3em;
+  width: 300px;
+  height: 370px;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 300px;
+  border-radius: 20%;
+  margin: auto;
+  margin-top: 20%;
+  background-color: rgba(255,255,255,0.5);
+}
+.new-city-form {
+  font-family: "Bellota Text", sans-serif;
+  color: white;
+  font-size: 1.2em;
+  width: 300px;
+  height: 300px;
+  padding-left: 50px;
+  padding-top: 30px;
+  border-radius: 20%;
+  margin: auto;
+  background-color: rgba(255,255,255,0.5);
+}

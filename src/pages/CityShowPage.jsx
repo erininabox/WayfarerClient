@@ -61,6 +61,7 @@ class CityShowPage extends React.Component {
               Create an article
             </Link>
           </h2>
+          
           </div>
         </div>
       </div>

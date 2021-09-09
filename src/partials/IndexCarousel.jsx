@@ -23,9 +23,10 @@ class IndexCarousel extends React.Component {
             <p className='cityindexname'>{cityObj.city}</p>
             {/* <CityShowPage cityObj={cityObj}/> */}
           </Link>
-          {/* <button className='btn-danger' 
-          onClick={() => this.handleDelete(cityObj._id)}>Delete
-          </button> */}
+          <p className="delete-button-wrapper">
+          <button className='delete-button submit-button' 
+          onClick={() => this.handleDelete(cityObj._id)}> Delete City
+          </button> </p>
         </div>
       )
     })

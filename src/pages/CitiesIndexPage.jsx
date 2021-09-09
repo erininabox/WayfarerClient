@@ -93,17 +93,19 @@ class CitiesIndexPage extends Component {
               deleteCity={this.deleteCity}
             />
           </div>
-
+          <p />
           <div className="new-city-form">
             <h2>Add a City</h2>
             <form onSubmit={this.handleFormSubmit}>
               <input
+              className="input-text"
                 type="text"
                 value={this.state.inputVal}
                 onChange={this.handleChange}
               />
             <h2>Add a Pic</h2>
               <input
+              className="input-text"
                 type="text"
                 value={this.state.inputImage}
                 onChange={this.handleImageChange}
