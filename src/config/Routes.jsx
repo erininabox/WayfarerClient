@@ -11,7 +11,7 @@ import CreateArticlePage from '../pages/CreateArticlePage';
 import SignupPage from '../pages/SignupPage';
 import LoginPage from '../pages/LoginPage'
 // import CityModel from '../models/CityModel';
-import Tiptap from '../pages/Tiptap';
+
 
 
 function Routes(){

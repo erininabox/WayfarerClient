@@ -60,11 +60,11 @@ border: 1px solid black;
   margin: auto;
 }
 
-.App{
+/* .App{
   background-position: fixed center;
   background-size: cover;
-  height: 100vh;
-}
+  
+} */
 /* .city-show-page{
 } */
 
@@ -86,13 +86,16 @@ border: 1px solid black;
 .carousel-container{
   padding: 20px;
   background-color: rgba(255,255,255,0.7);
-  display: flex; 
-
 }
-
+.carousel-index{
+  text-align: center;
+}
 .cityindexname{
   font-size: 20px;
+  color: white;
   font-family: 'Bellota Text', 'Sans';
   text-align: center;
-  position: relative; 
+  position: fixed;
+  bottom: 125px; 
+  margin-left: 150px;
 }
