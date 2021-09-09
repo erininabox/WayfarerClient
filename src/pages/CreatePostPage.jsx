@@ -20,7 +20,9 @@ class MyEditor extends React.Component {
 
   render() {
     return (
+      <div className='create-post'>
       <Editor editorState={this.state.editorState} onChange={this.onChange} />
+      </div>
     );
   }
 }

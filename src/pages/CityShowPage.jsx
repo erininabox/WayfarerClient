@@ -28,13 +28,14 @@ class CityShowPage extends React.Component{
     render(){
         console.log(this.props)
         return(
-            <div className='city-show-page'>
+            <div className='main city-show-page'>
                 
-                <h1>{this.state.city}</h1>
-                <img src={this.state.image} alt="" />
+                <h1 className='city-name'>{this.state.city}</h1>
+                <img className='city-image' src={this.state.image} alt="" />
                 {/* Need to create articles here */}
                 <div>
-        <h2><Link to="/cities/:id/create">Create an article</Link></h2>
+                    <h2 className='articles'>Articles:</h2>
+        <h2><Link className='articles'to="/cities/:id/create">Create an article</Link></h2>
           
       </div>
     </div>     

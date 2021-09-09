@@ -14,8 +14,12 @@ import CityCarousel from './partials/CityCarousel'
 
 function App() {
   return (
-    <div 
-    className="App">
+     <div 
+    className='cities-index' 
+    style={{
+      backgroundImage: `url('${process.env.PUBLIC_URL}/images/airport.jpeg')`,
+      backgroundPosition: "bottom"
+    }}>
      
       <Header/>
       <Routes/>

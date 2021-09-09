@@ -8,7 +8,7 @@ function Header(){
                 <img className='logobanner' src={process.env.PUBLIC_URL + '/images/banner.png'} alt="" />
                 <span className='headerlinks'>
                     <ul className='something'>
-                <li className='Search'>Search</li> &nbsp;
+                <li className='Search'></li> &nbsp;
                 <Link to='./signup'> Sign-Up </Link> &nbsp;
                 <Link to='./login'> Login </Link> &nbsp;
 

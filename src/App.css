@@ -1,16 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Bellota+Text&display=swap');
+.city-name{
+  font-family: 'Bellota Text', 'Sans';
+  color: white;
+  text-align: center;
+}
+
+.articles{
+  font-family: 'Bellota Text', 'Sans';
+  color: white;
+}
+.ProseMirror{
+  font-family: 'Bellota Text', 'Sans';
+  color: white;
+}
+.city-image{
+  width: 70vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .inlineheader{
   display:flex;
   justify-content: space-between;
 }
 .header {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-family: 'Bellota Text', 'Sans';
   font-size: 30px;
   color: white;
   padding: 5px;
-  background: rgb(170, 194, 216);
+  background: rgba(251, 252, 252, 0.583);
   display: float;
 }
 .logobanner {
@@ -79,9 +99,10 @@ border: 1px solid black;
 }
 .cities-index{
   margin: 0 auto;
-  padding: 20px;
-  background-repeat: no-repeat;
+  /* padding: 20px; */
+  background-position: fixed center;
   background-size: cover;
+  min-height: 100vh;
 }
 .carousel-container{
   padding: 20px;
@@ -99,3 +120,8 @@ border: 1px solid black;
   bottom: 125px; 
   margin-left: 150px;
 }
+.main{
+  padding: 20px;
+}
+
+

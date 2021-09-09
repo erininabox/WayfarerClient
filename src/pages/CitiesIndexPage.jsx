@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import IndexCarousel from '../partials/IndexCarousel'
 // const axios = require('axios').default;
 import axios from 'axios'
-
+import Header from '../components/Header'
 
 
 // Steps to render the list of cities
@@ -75,10 +75,16 @@ class CitiesIndexPage extends Component {
   render() {
     console.log(this.state)
     return (
-      <div className='cities-index' style={{
+      <div 
+      className='cities-index' 
+      style={{
         backgroundImage: `url('${process.env.PUBLIC_URL}/images/airport.jpeg')`,
         backgroundPosition: "bottom"
       }}>
+        <div className='head'>
+        {/* <Header /> */}
+        </div>
+        <div className='main'>
         <div className='carousel-container'>
         <IndexCarousel  
         cityData={this.state.cityData}
@@ -100,6 +106,7 @@ class CitiesIndexPage extends Component {
           />
           <input type='submit' />
         </form>
+        </div>
       </div>
     );
   }
