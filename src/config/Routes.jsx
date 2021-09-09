@@ -11,8 +11,8 @@ import CreateArticlePage from '../pages/CreateArticlePage';
 import SignupPage from '../pages/SignupPage';
 import LoginPage from '../pages/LoginPage'
 // import CityModel from '../models/CityModel';
-import Tiptap from '../pages/Tiptap';
-import Header from '../components/Header'
+// import Tiptap from '../pages/Tiptap';
+// import Header from '../components/Header'
 
 
 function Routes(){

@@ -29,11 +29,12 @@ class CityShowPage extends React.Component{
     renderArticles = () =>{
         let articlesJSX = this.state.articles.map((article)=>{
             return(
-                <div>
+                <div className='city-articles'>
                     <ul>
                         <li>
                             <a href={`/cities/${this.props.match.params.id}/${article._id}`}>{article.content}</a>
                             {/* render as links to article */}
+                            {/* {article.content} */}
                         </li>
                     </ul>
                 </div>
@@ -48,9 +49,10 @@ class CityShowPage extends React.Component{
         
                 {/* Need to create articles here */}
                 <div>
-                    <h2 className='articles'>Articles:</h2>
+                    
                 <h1 className='city-name'>{this.state.city}</h1>
                 <img className='city-image' src={this.state.image} alt="" />
+                <h2 className='articles'>Articles:</h2>
                 {this.renderArticles()}
         <h2><Link className='articles' to={`/cities/${this.props.match.params.id}/create`}>Create an article</Link></h2>
           
