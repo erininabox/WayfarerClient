@@ -1,5 +1,6 @@
 import "../cityShowPage.css";
 import React from "react";
+import axios from "axios";
 import CityModel from "../models/CityModel";
 import { Link } from "react-router-dom";
 // fetch data for the game in particular by it's id
@@ -11,6 +12,29 @@ class CityShowPage extends React.Component {
     image: "",
     articles: [],
   };
+
+
+  /////////NEED BOTH DELETE FUNCTIONS/////////////
+  handleDelete = (id) => {
+    axios.delete(`http://localhost:4000/api/cities/${id}`)
+    .then(() => {
+     this.props.deleteCity(id)
+    })
+  }
+
+  deleteCity = (id) => {
+    console.log("delete city activated");
+    const cityDataArray = this.state.cityData.filter((cityObj) => {
+      console.log(this.cityObj._id, id);
+      if (this.cityObj._id == id) {
+        return false;
+      } else {
+        return true;
+      }
+    });
+    this.setState({ cityData: cityDataArray });
+  };
+//////////////////////////////
 
   componentDidMount() {
     const cityId = this.props.match.params.id;
@@ -61,6 +85,12 @@ class CityShowPage extends React.Component {
             >
               Create an article
             </Link>
+            <p className="delete-button-wrapper">
+          <button className='delete-button submit-button' 
+          onClick={() => this.handleDelete(this.props.cityObj._id)}> Delete City
+          </button> </p>
+
+            
           </h2>
           
           </div>

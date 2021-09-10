@@ -24,18 +24,18 @@ class CitiesIndexPage extends Component {
     });
   };
 
-  deleteCity = (id) => {
-    console.log("delete city activated");
-    const cityDataArray = this.state.cityData.filter((cityObj) => {
-      console.log(cityObj._id, id);
-      if (cityObj._id == id) {
-        return false;
-      } else {
-        return true;
-      }
-    });
-    this.setState({ cityData: cityDataArray });
-  };
+  // deleteCity = (id) => {
+  //   console.log("delete city activated");
+  //   const cityDataArray = this.state.cityData.filter((cityObj) => {
+  //     console.log(cityObj._id, id);
+  //     if (cityObj._id == id) {
+  //       return false;
+  //     } else {
+  //       return true;
+  //     }
+  //   });
+  //   this.setState({ cityData: cityDataArray });
+  // };
 
   componentDidMount = () => {
     console.log("mounted");
@@ -60,7 +60,7 @@ class CitiesIndexPage extends Component {
           <div className="carousel-container">
             <IndexCarousel
               cityData={this.state.cityData}
-              deleteCity={this.deleteCity}
+              // deleteCity={this.deleteCity}
             />
           </div>
           <p />

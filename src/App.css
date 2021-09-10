@@ -154,6 +154,7 @@
   text-align: center;
 }
 .cityindexname {
+  opacity: 0;
   font-size: 1.6em;
   font-weight: 600;
   color: white;
@@ -188,6 +189,7 @@
     -.5px -.25px 0 #000;
 }
 .cityindexname:hover {
+  opacity: 100%;
   font-size: 30px;
   font-weight: 800;
   color: white;
@@ -195,15 +197,15 @@
   text-align: center;
   position:fixed;
   bottom: 125px; 
-  margin-left: 135px;
+  margin-left: 30px;
   text-shadow: none;
   transition: .7s;
-  background-color: rgba(226, 226, 226, 0.399);
+  background-color: rgba(226, 226, 226, 0);
   border-radius: 20%;
-  padding: 10px;
+  padding: 70px;
   /* width:400px;
   height: 300px; */
- transition: .5s;
+ transition: .3s;
 }
 .main{
   padding: 20px;
@@ -274,13 +276,12 @@
 .slick-next:before{
   font-size: 30px;
 }
-
 .slick-prev:before{
   font-size: 30px;
 }
 .plus-sign{
   width: 6vh;
-  margin-top: -110px;
+  margin-top: 0px;
   margin-left: 20px;
 
 }
