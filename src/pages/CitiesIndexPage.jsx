@@ -43,19 +43,21 @@ class CitiesIndexPage extends Component {
     this.fetchData();
   };
 
-
   render() {
     console.log(this.state);
     return (
       <div
         className="cities-index"
         style={{
-          backgroundImage: `url('${process.env.PUBLIC_URL}/images/airport.jpeg')`,
+          backgroundImage: `url('${process.env.PUBLIC_URL}/images/BGcopy.jpg')`,
           backgroundPosition: "bottom",
         }}
       >
         <div className="head">{/* <Header /> */}</div>
-
+        <br />
+        <br />
+        <br />
+        <br />
         <div className="main">
           <div className="carousel-container">
             <IndexCarousel

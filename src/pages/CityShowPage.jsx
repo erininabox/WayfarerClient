@@ -69,7 +69,12 @@ class CityShowPage extends React.Component {
   };
   render() {
     return (
-      <div className="main city-show-page">
+      <div className="main-city-show-page" style={{
+        // backgroundColor: '#383838',
+        backgroundImage: `url('${process.env.PUBLIC_URL}/images/BG.jpg')`,
+        backgroundPosition: "bottom",
+        backgroundSize: "fill"
+      }}>
         {/* Need to create articles here */}
         <div>
           <h1 className="city-name">{this.state.city}</h1>

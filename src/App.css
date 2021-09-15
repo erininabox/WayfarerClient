@@ -129,40 +129,60 @@
 } */
 
 
-
 /* Styling the Index Carousel */
 /* .carousel-pics{
 } */
+
 .cityindeximage{
-  width:400px;
-  height: 300px;
+  /* width:400px; */
+  width:25vw;
+  /* height: 300px; */
+  height:33vh;
   margin: auto;
 }
-
 .cities-index{
   margin: 0 auto;
-  /* padding: 20px; */
   background-position: fixed center;
   background-size: cover;
   min-height: 100vh;
 }
 .carousel-container{
-  padding: 20px;
-  background-color: rgba(255,255,255,0.583);
+  padding:1em;
+  background-color: rgba(124, 123, 123, 0.707);
 }
 .carousel-index{
   text-align: center;
 }
-.cityindexname {
-  opacity: 0;
-  font-size: 1.6em;
-  font-weight: 600;
-  color: white;
+.imageandtext p{
+  width:30vw;
+  /* padding:10%; */
+}
+.imageandtext p{
+  margin: 0;
+  display: block;
+  position: absolute;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  text-align:right;
   font-family: 'Bellota Text', 'Sans';
+}
+.imageandtext img:hover{
+background: #000;
+opacity: 0.5;
+transition:.3s;
+}
+.imageandtext p{
+  font-size: 2em;
+  font-weight: 800;
+  color: white;
+  width:6em;
+  font-family: 'Bellota Text', 'Sans';
+  bottom:4.5vw; 
+  position:absolute;
   text-align: center;
-  position: fixed;
-  bottom: 125px; 
-  margin-left: 250px;
+  margin-left:9vw;
   text-shadow: .25px .25px 0 #000,
     -.25px .25px 0 #000,
     .25px -.25px 0 #000,
@@ -186,27 +206,22 @@
     .5px .25px 0 #000,
     -.5px .25px 0 #000,
     .5px -.25px 0 #000,
-    -.5px -.25px 0 #000;
+    -.5px -.25px 0 #000; 
+  }
+
+
+.main-city-show-page{
+    margin: 0 auto;
+    background-position: fixed center;
+    background-size: cover;
+    min-height: 100vh;
 }
-.cityindexname:hover {
-  opacity: 100%;
-  font-size: 30px;
-  font-weight: 800;
-  color: white;
-  font-family: 'Bellota Text', 'Sans';
-  text-align: center;
-  position:fixed;
-  bottom: 125px; 
-  margin-left: 30px;
-  text-shadow: none;
-  transition: .7s;
-  background-color: rgba(226, 226, 226, 0);
-  border-radius: 20%;
-  padding: 70px;
-  /* width:400px;
-  height: 300px; */
- transition: .3s;
-}
+
+
+
+
+
+
 .main{
   padding: 20px;
 }
@@ -232,6 +247,7 @@
   position: float;
   margin: auto;
 }
+
 
 .sign-up-form-css {
   font-family: "Bellota Text", sans-serif;

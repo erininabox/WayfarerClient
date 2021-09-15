@@ -17,9 +17,11 @@ function App() {
      <div 
     className='cities-index' 
     style={{
-      backgroundImage: `url('${process.env.PUBLIC_URL}/images/airport.jpeg')`,
-      backgroundPosition: "bottom"
-    }}>
+      // backgroundColor: '#383838',
+      backgroundImage: `url('${process.env.PUBLIC_URL}/images/header.jpg')`,
+      // backgroundPosition: "bottom"
+    }}
+    >
      
       <Header/>
       <Routes/>

@@ -8,25 +8,24 @@ import axios from 'axios';
 class IndexCarousel extends React.Component {
   state = {redirect: null}
 
-  handleDelete = (id) => {
-    axios.delete(`http://localhost:4000/api/cities/${id}`)
-    .then(() => {
-     this.props.deleteCity(id)
-    })
-  }
+  // handleDelete = (id) => {
+  //   axios.delete(`http://localhost:4000/api/cities/${id}`)
+  //   .then(() => {
+  //    this.props.deleteCity(id)
+  //   })
+  // }
   carouselItems = () => {
     const citiesJSX = this.props.cityData.map((cityObj, idx) => {
       return (
         <div className='carousel-index' key={idx}>
           <Link to={`/cities/${cityObj._id}`}>
+            <div className='imageandtext'>
             <img className='cityindeximage' src={cityObj.image} alt=""/>
             <p className='cityindexname'>{cityObj.city}</p>
+            </div>
             {/* <CityShowPage cityObj={cityObj}/> */}
           </Link>
-          <p className="delete-button-wrapper">
-          <button className='delete-button submit-button' 
-          onClick={() => this.handleDelete(cityObj._id)}> Delete City
-          </button> </p>
+          
         </div>
       )
     })
