@@ -9,10 +9,10 @@ function Header(){
                 <span className='headerlinks'>
                     <ul className='something'>
                 <li className='Search'></li> &nbsp;
-                <Link to='./signup'> Sign-Up </Link> &nbsp;
-                <Link to='./login'> Login </Link> &nbsp;
+                <Link to='./signup' className='lank'> Sign-Up </Link> &nbsp;
+                <Link to='./login' className='lank'> Login </Link> &nbsp;
 
-                <li className='cities-link'><a href='/cities'>Cities</a></li>&nbsp;
+                <li className='cities-link'><a href='/cities'className='lank'>Cities</a></li>&nbsp;
                     </ul>
                 </span>
             </span>
