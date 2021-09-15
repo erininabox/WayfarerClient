@@ -209,18 +209,30 @@ transition:.3s;
     -.5px -.25px 0 #000; 
   }
 
-
+a{
+  font-family: "Bellota Text", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 1.3em;
+}
+a:visited{
+  font-family: "Bellota Text", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1.3em;
+}
+a:hover{
+  font-family: "Bellota Text", sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1.3em;
+}
 .main-city-show-page{
     margin: 0 auto;
     background-position: fixed center;
     background-size: cover;
     min-height: 100vh;
 }
-
-
-
-
-
 
 .main{
   padding: 20px;
