@@ -209,6 +209,20 @@ transition:.3s;
     .5px -.25px 0 #000,
     -.5px -.25px 0 #000; 
   }
+.lank{
+  color: rgb(70, 219, 245);
+  text-decoration:none;
+}
+.lank:visited{
+  color: rgb(70, 219, 245);
+  text-decoration:none;
+}
+.lank:hover{
+  color: rgb(52, 161, 181);
+  transition:.3s;
+  text-decoration:none;
+}
+
 
 a{
   font-family: "Bellota Text", sans-serif;

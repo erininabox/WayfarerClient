@@ -10,7 +10,7 @@ import CreateCity from "../pages/CreateCity"
 
 // Steps to render the list of cities
 // - Create a component for each city
-// - Need to access the database to get the game data
+// - Need to access the database to get the  data
 // - add state to maintain list of all data
 class CitiesIndexPage extends Component {
   state = {
@@ -23,19 +23,6 @@ class CitiesIndexPage extends Component {
       this.setState({ cityData: data });
     });
   };
-
-  // deleteCity = (id) => {
-  //   console.log("delete city activated");
-  //   const cityDataArray = this.state.cityData.filter((cityObj) => {
-  //     console.log(cityObj._id, id);
-  //     if (cityObj._id == id) {
-  //       return false;
-  //     } else {
-  //       return true;
-  //     }
-  //   });
-  //   this.setState({ cityData: cityDataArray });
-  // };
 
   componentDidMount = () => {
     console.log("mounted");
