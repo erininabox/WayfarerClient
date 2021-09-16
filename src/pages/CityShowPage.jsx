@@ -77,12 +77,31 @@ class CityShowPage extends React.Component {
       }}>
         {/* Need to create articles here */}
         <div>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
           <h1 className="city-name">{this.state.city}</h1>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <h2 className="city-undertitle">Find out more about {this.state.city}...</h2>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
             <img className="city-image" src={this.state.image} alt="" />
           <div className="city-show-body">
-          <h2 className="articles">Articles:</h2>
-            {this.renderArticles()}
+         
           <h2>
             <Link
               className="createarticles"
@@ -94,10 +113,9 @@ class CityShowPage extends React.Component {
           <button className='delete-button submit-button' 
           onClick={() => this.handleDelete(this.props.cityObj._id)}> Delete City
           </button> </p>
-
-            
           </h2>
-          
+          <h2 className="articles">Articles:</h2>
+            {this.renderArticles()}
           </div>
         </div>
       </div>
