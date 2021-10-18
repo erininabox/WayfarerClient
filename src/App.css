@@ -4,7 +4,7 @@
 
 .city-name{
   font-family: 'Bellota Text', 'Sans';
-  color: white;
+  color: rgb(254, 254, 253);
   font-size:30vh;
   font-weight: 800;
   text-align: center;
@@ -143,18 +143,15 @@
 /* Styling the Index Carousel */
 /* .carousel-pics{
 } */
+
 .city-image{
   width:50vw;
   height:66vh;
   margin: auto;
 }
-
-
 .cityindeximage{
-  /* width:400px; */
-  width:25vw;
-  /* height: 300px; */
-  height:33vh;
+  width:20em;
+  height:17em;
   margin: auto;
 }
 .cities-index{
@@ -197,14 +194,13 @@ filter:grayscale(0%);
 }
 .imageandtext p{
   font-size: 2em;
-  font-weight: 800;
-  color: white;
+  color: rgb(232, 218, 72);
   width:6em;
   font-family: 'Bellota Text', 'Sans';
   bottom:4.5vw; 
   position:absolute;
   text-align: center;
-  margin-left:9vw;
+  margin-left:8vw;
   text-shadow: .25px .25px 0 #000,
     -.25px .25px 0 #000,
     .25px -.25px 0 #000,
@@ -230,6 +226,9 @@ filter:grayscale(0%);
     .5px -.25px 0 #000,
     -.5px -.25px 0 #000; 
   }
+
+
+  
 .lank{
   color: rgb(70, 219, 245);
   text-decoration:none;
@@ -263,13 +262,15 @@ a:hover{
   font-weight: 600;
   font-size: 1.3em;
 }
+
+
+
 .main-city-show-page{
     margin: 0 auto;
     background-position: fixed center;
     background-size: cover;
     min-height: 100vh;
 }
-
 .main{
   padding: 20px;
 }
@@ -349,3 +350,5 @@ a:hover{
   margin-left: 20px;
 
 }
+
+
